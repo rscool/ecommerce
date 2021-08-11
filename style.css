@@ -12,7 +12,9 @@
     /* height: 5rem; */
     margin-top: 0rem;
     padding-top: 0rem;
-    
+    /* position: fixed;
+    z-index: 1;
+    width: 100%; */
 }
 
 
@@ -407,7 +409,7 @@ img {vertical-align: middle;}
 .mySlides img{
     display: flex;
     flex-shrink: 0;
-    width: 100vw;
+    width: 98.9vw;
 }
 
 /* Caption text */

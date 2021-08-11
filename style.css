@@ -8,7 +8,7 @@
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
-    background-color: #2874f0;
+    background-color: rgb(49, 3, 77);
     /* height: 5rem; */
     margin-top: 0rem;
     padding-top: 0rem;
@@ -150,11 +150,12 @@ li a{
 
 
 
-.container1{
+/* .container1{
     
     display: inline-flex;
-    /* overflow: hidden; */
+
     overflow-x: scroll;
+    
 
     justify-content: space-between;
 }
@@ -164,8 +165,9 @@ li a{
 } 
 
 .container1 img{
-    display: inline-flexbox;
-}
+    display: flex;
+    flex-shrink: 0;
+} */
 
 
 /* .row1{
@@ -214,7 +216,7 @@ li a{
 }
 
 .categoryname{
-    background-color: rgb(27, 45, 92);
+    background-color: rgb(35, 1, 1);
     margin: 10px 0px;
     width: inherit;
     height: 8rem;
@@ -287,6 +289,7 @@ li a{
     .cast > *{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+        padding-bottom: 60px;
     }
     img.logo {
         max-width: 5rem;
@@ -300,8 +303,8 @@ li a{
     /* footer */
 
     .footer-basic {
-        padding:40px 0;
-        background-color:#5c5c5c;
+        padding:15px 0;
+        background-color:#000000;
         color:#ffffff;
       }
       
@@ -330,7 +333,7 @@ li a{
       
       .footer-basic .social {
         text-align:center;
-        padding-bottom:25px;
+        /* padding-bottom:25px; */
       }
       
       .footer-basic .social > a {
@@ -352,9 +355,116 @@ li a{
       }
       
       .footer-basic .copyright {
-        margin-top:15px;
+        /* margin-top:15px; */
         text-align:center;
         font-size:13px;
-        color:rgb(0, 0, 0);
+        color:rgb(255, 255, 255);
         margin-bottom:0;
       }
+
+
+      /* crousel css */
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    display: flex;
+    flex-shrink: 0;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  background-color: rgba(0,0,0,0.8);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.mySlides img{
+    display: flex;
+    flex-shrink: 0;
+    width: 100vw;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  /* display: inline-block; */
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

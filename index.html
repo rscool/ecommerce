@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script> -->
+    
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/x-icon" href="images/ico.ico" />
     <link href="style.css" rel="stylesheet" />
-
+    
+    
     <!-- footer CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
@@ -21,21 +25,13 @@
       rel="stylesheet"
     />
 
-    <script src="ecom.js"></script>
+    
 
     <title>Shopify</title>
+    
   </head>
   <body>
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> -->
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script> -->
-
+    
     <div class="container">
       <div class="navbar">
         <div>
@@ -58,7 +54,7 @@
 
               <li><a href="#">Home</a></li>
               <li>
-                <button id="btn0"><a href="">Login</a></button>
+                <a href=""></a><button id="btn0">Login</button></a>
               </li>
               <li><a href="#Contactus">Contact</a></li>
               <li><a href="#">Cart</a></li>
@@ -118,11 +114,37 @@
       </div>
     </div>
 
+    <!-- <div class="container1">
+      <img src="images/offer4.jpg" alt="offer" width="100%"/>
+      <img src="images/offer2.jpg" alt="offer" width="100%"/>
+      <img src="images/offer1.jpg" alt="offer" width="100%"/>
+      <img src="images/offer3.jpg" alt="offer" width="100%"/>
+    </div> -->
     <div class="container1">
-      <img src="images/offer4.jpg" alt="offer" width="100%" />
-      <img src="images/offer1.jpg" alt="offer" width="100%" />
-      <img src="images/offer2.jpg" alt="offer" width="100%" />
-      <img src="images/offer3.jpg" alt="offer" width="100%" />
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="images/offer4.jpg">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="images/offer2.jpg">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="images/offer1.jpg">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
     </div>
 
     <div class="categoryname">
@@ -139,7 +161,7 @@
             <span><b>Mi 10i</b><br /></span>
             <span>6 GB RAM 128 GB ROM<br /></span>
             <span>&#8377;</span>20,000<br /></span>
-            <span><a href="#"><button class="cartbtn">Add to Cart</button></a><br /> </span>
+            <span><a href="#" class="add-cart"><button class="cartbtn">Add to Cart</button></a><br /> </span>
           </div>
         </div>
       </div>
@@ -152,7 +174,7 @@
             <span><b>Mi 11X 5G</b><br /></span>
             <span>6 GB RAM 128 GB ROM<br /></span>
             <span>&#8377;</span>20,000<br /></span>
-            <span><b></b><a href="#"><button class="cartbtn">Add to Cart</button></a><br /> </span>
+            <span><b></b><a href="#" class="add-cart"><button class="cartbtn">Add to Cart</button></a><br /> </span>
           </div>
         </div>
       </div>
@@ -165,7 +187,7 @@
             <span><b>Samsung Galaxy F62</b><br /></span>
             <span>8 GB RAM 128 GB ROM<br /></span>
             <span>&#8377;</span>20,000<br /></span>
-            <span><a href="#"><button class="cartbtn">Add to Cart</button></a><br /> </span>
+            <span><a href="#" class="add-cart"><button class="cartbtn">Add to Cart</button></a><br /> </span>
           </div>
         </div>
       </div>
@@ -178,7 +200,7 @@
             <span><b>Samsung Galaxy M51</b><br /></span>
             <span>6 GB RAM 128 GB ROM<br /></span>
             <span>&#8377;</span>20,000<br /></span>
-            <span><a href="#"><button class="cartbtn">Add to Cart</button></a><br /> </span>
+            <span><a href="#" class="add-cart"><button class="cartbtn">Add to Cart</button></a><br /> </span>
           </div>
         </div>
       </div>
@@ -188,10 +210,10 @@
             <img class="medium" src="images/mobs/vivo x60 pro+.jpg" />
           </div>
           <div class="card-body">
-            <span><b>Samsung Galaxy M51</b><br /></span>
-            <span>6 GB RAM 128 GB ROM<br /></span>
-            <span>&#8377;</span>20,000<br /></span>
-            <span><a href="#"><button class="cartbtn">Add to Cart</button></a><br /> </span>
+            <span><b>Vivo X60 pro+</b><br /></span>
+            <span>12GB RAM 256GB ROM<br /></span>
+            <span>&#8377;</span>69,999<br /></span>
+            <span><a href="#" class="add-cart"><button class="cartbtn">Add to Cart</button></a><br /> </span>
           </div>
         </div>
       </div>
@@ -489,18 +511,14 @@
     <div class="footer-basic" id="Contactus">
       <footer>
           <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-          <ul class="list-inline">
-              <li class="list-inline-item"><a href="#">Home</a></li>
-              <li class="list-inline-item"><a href="#">Services</a></li>
-              <li class="list-inline-item"><a href="#">About</a></li>
-              <li class="list-inline-item"><a href="#">Contact us</a></li>
-              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-          </ul>
+         
           <p class="copyright">Shopify © 2018</p>
       </footer>
   </div>
+
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-
+  <script type="text/javascript" src="ecom.js"></script>
   </body>
 </html>

@@ -29,6 +29,9 @@
     /* list-style-type: none; */
     /* justify-content:space-around; */
     
+    
+  
+
 }
 
 #sear{
@@ -465,44 +468,37 @@ img {vertical-align: middle;}
     margin: 4.5rem;
 }
 
+.product{
+    display: table-cell;
+    border: 1px solid black;
+    /* margin-left: 3rem; */
+    width: 30rem;
 
-.quantity, .price, .total, .product{
-    display: table-cell;
-    border: 2px solid black;
-    margin-left: 3rem;
-    padding: 1rem 0;
-    text-align: center;
-    width: 30rem;
+text-align: center;
+padding: 1rem 0;
 }
+.price{
+    display: table-cell;
+    border: 1px solid black;
+margin-left: 3rem;
+text-align: center;
+width: 30rem;
+padding: 1rem 0;
 
-.ty{
-    text-align: center;
-    padding-top: 5rem;
 }
-.cartt{
-    display: table;
-    margin-left: 15rem;
-    margin-bottom: 10rem;
-}
-.finalcart{
-    display: table-row;
-    /* justify-content: space-around; */
-    flex-direction: row;
-}
-.cartTotalTitle{
+.quantity{
     display: table-cell;
-    border: 3px solid black;
-    border-right: 1.5px;
+    border: 1px solid black;
     margin-left: 3rem;
     padding: 1rem 0;
     text-align: center;
     width: 30rem;
 }
-.cartTotal{
+.total{
     display: table-cell;
-    border: 3px solid black;
+    border: 1px solid black;
     margin-left: 3rem;
-    padding: 1rem 0;
     text-align: center;
     width: 30rem;
+    padding: 1rem 0;
 }
